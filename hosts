@@ -1,0 +1,6 @@
+[all]
+192.168.2.10 ansible_ssh_common_args='-o StrictHostKeyChecking=no' ansible_ssh_host=localhost ansible_ssh_port=2020 ansible_ssh_user=root ansible_ssh_password=root ansible_become_user=root ansible_become_password=redhat ansible_ssh_private_key_file=~/.ssh/id_rsa
+
+[web1]
+192.168.2.10 ansible_ssh_common_args='-o StrictHostKeyChecking=no' ansible_ssh_host=localhost ansible_ssh_port=2020 ansible_ssh_user=root ansible_ssh_password=redhat ansible_become_user=root ansible_become_password=redhat ansible_ssh_private_key_file=~/.ssh/id_rsa
+

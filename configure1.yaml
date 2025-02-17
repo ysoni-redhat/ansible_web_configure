@@ -1,0 +1,24 @@
+---
+- name: Making website1
+  hosts: web1
+  tasks:
+     - name: Ensure sshpass is installed
+       apt:
+         name: sshpass
+         state: present
+
+     - copy:
+        src: ./settings/web1.conf
+        dest: /etc/apache2/sites-available/001-default.conf
+
+     - name: Remove existing website directory
+       file:
+         path: "/var/www/html/"
+         state: absent
+
+     - name: Clone the website from GitHub
+       git:
+         repo: "https://github.com/ysoni-redhat/website1.git"
+         dest: "/var/www/html/"
+         version: main
+         force: yes

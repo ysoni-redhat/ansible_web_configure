@@ -1,0 +1,6 @@
+- name: Restarting the service
+  hosts: all
+  tasks:
+    - service:
+       name: apache2
+       state: restarted

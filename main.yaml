@@ -1,0 +1,5 @@
+- include: install.yaml
+
+- include: configure1.yaml
+
+- include: service.yaml
