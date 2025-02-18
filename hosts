@@ -1,6 +1,13 @@
 [all]
 192.168.2.10 ansible_ssh_common_args='-o StrictHostKeyChecking=no' ansible_ssh_host=localhost ansible_ssh_port=2020 ansible_ssh_user=root ansible_ssh_password=root ansible_become_user=root ansible_become_password=root ansible_ssh_private_key_file=~/.ssh/id_rsa
+192.168.2.11 ansible_ssh_common_args='-o StrictHostKeyChecking=no' ansible_ssh_host=localhost ansible_ssh_port=2021 ansible_ssh_user=root ansible_ssh_password=root ansible_become_user=root ansible_become_password=root ansible_ssh_private_key_file=~/.ssh/id_rsa
+192.168.2.12 ansible_ssh_common_args='-o StrictHostKeyChecking=no' ansible_ssh_host=localhost ansible_ssh_port=2022 ansible_ssh_user=root ansible_ssh_password=root ansible_become_user=root ansible_become_password=root ansible_ssh_private_key_file=~/.ssh/id_rsa
 
 [web1]
 192.168.2.10 ansible_ssh_common_args='-o StrictHostKeyChecking=no' ansible_ssh_host=localhost ansible_ssh_port=2020 ansible_ssh_user=root ansible_ssh_password=root ansible_become_user=root ansible_become_password=root ansible_ssh_private_key_file=~/.ssh/id_rsa
 
+[web2]
+192.168.2.11 ansible_ssh_common_args='-o StrictHostKeyChecking=no' ansible_ssh_host=localhost ansible_ssh_port=2021 ansible_ssh_user=root ansible_ssh_password=root ansible_become_user=root ansible_become_password=root ansible_ssh_private_key_file=~/.ssh/id_rsa
+
+[web3]
+192.168.2.12 ansible_ssh_common_args='-o StrictHostKeyChecking=no' ansible_ssh_host=localhost ansible_ssh_port=2022 ansible_ssh_user=root ansible_ssh_password=root ansible_become_user=root ansible_become_password=root ansible_ssh_private_key_file=~/.ssh/id_rsa
