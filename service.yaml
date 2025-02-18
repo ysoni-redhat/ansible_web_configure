@@ -1,5 +1,6 @@
 - name: Restarting the service
   hosts: all
+  gather_facts: no
   tasks:
     - service:
        name: apache2
