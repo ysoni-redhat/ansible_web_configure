@@ -1,5 +1,4 @@
-- include: install.yaml
-
-- include: configure1.yaml
-
-- include: service.yaml
+---
+- import_playbook: install.yaml
+- import_playbook: configure1.yaml
+- import_playbook: service.yaml
